@@ -10,8 +10,10 @@
 #import "BaralhoDeJogo.h"
 
 @interface JogoDeCartasViewControler ()
-@property (strong, nonatomic) IBOutlet UIButton *carta;
-@property (strong, nonatomic) IBOutlet UILabel *tentativasLabel;
+
+
+@property (weak, nonatomic) IBOutletC UIButton *carta;
+@property (weak, nonatomic) IBOutlet UILabel *tentativasLabel;
 @property (nonatomic) NSInteger tentativas;
 @end
 
