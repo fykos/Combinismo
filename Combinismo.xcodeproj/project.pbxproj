@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08FFCDA619CA607A00DAD246 /* JogoDeCombinacaoDeCartas.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FFCDA519CA607A00DAD246 /* JogoDeCombinacaoDeCartas.m */; };
 		15E2077C19C8E07500D76747 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2077B19C8E07500D76747 /* main.m */; };
 		15E2077F19C8E07500D76747 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2077E19C8E07500D76747 /* AppDelegate.m */; };
-		15E2078219C8E07500D76747 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2078119C8E07500D76747 /* ViewController.m */; };
-		15E2078519C8E07500D76747 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E2078319C8E07500D76747 /* Main.storyboard */; };
 		15E2078719C8E07500D76747 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15E2078619C8E07500D76747 /* Images.xcassets */; };
 		15E2078A19C8E07500D76747 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E2078819C8E07500D76747 /* LaunchScreen.xib */; };
 		15E2079619C8E07500D76747 /* CombinismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2079519C8E07500D76747 /* CombinismoTests.m */; };
+		15E207AA19C8E09800D76747 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E2079F19C8E09800D76747 /* Main.storyboard */; };
+		15E207AB19C8E09800D76747 /* JogoDeCartasViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E207A119C8E09800D76747 /* JogoDeCartasViewControler.m */; };
+		15E207AC19C8E09800D76747 /* Carta.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E207A319C8E09800D76747 /* Carta.m */; };
+		15E207AD19C8E09800D76747 /* Baralho.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E207A519C8E09800D76747 /* Baralho.m */; };
+		15E207AE19C8E09800D76747 /* CartaDeJogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E207A719C8E09800D76747 /* CartaDeJogo.m */; };
+		15E207AF19C8E09800D76747 /* BaralhoDeJogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E207A919C8E09800D76747 /* BaralhoDeJogo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +32,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08FFCDA419CA607A00DAD246 /* JogoDeCombinacaoDeCartas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JogoDeCombinacaoDeCartas.h; sourceTree = "<group>"; };
+		08FFCDA519CA607A00DAD246 /* JogoDeCombinacaoDeCartas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JogoDeCombinacaoDeCartas.m; sourceTree = "<group>"; };
 		15E2077619C8E07500D76747 /* Combinismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Combinismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E2077A19C8E07500D76747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15E2077B19C8E07500D76747 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15E2077D19C8E07500D76747 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15E2077E19C8E07500D76747 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		15E2078019C8E07500D76747 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		15E2078119C8E07500D76747 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		15E2078419C8E07500D76747 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15E2078619C8E07500D76747 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		15E2078919C8E07500D76747 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		15E2078F19C8E07500D76747 /* CombinismoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombinismoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E2079419C8E07500D76747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15E2079519C8E07500D76747 /* CombinismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombinismoTests.m; sourceTree = "<group>"; };
+		15E2079F19C8E09800D76747 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		15E207A019C8E09800D76747 /* JogoDeCartasViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JogoDeCartasViewControler.h; sourceTree = "<group>"; };
+		15E207A119C8E09800D76747 /* JogoDeCartasViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JogoDeCartasViewControler.m; sourceTree = "<group>"; };
+		15E207A219C8E09800D76747 /* Carta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Carta.h; sourceTree = "<group>"; };
+		15E207A319C8E09800D76747 /* Carta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Carta.m; sourceTree = "<group>"; };
+		15E207A419C8E09800D76747 /* Baralho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baralho.h; sourceTree = "<group>"; };
+		15E207A519C8E09800D76747 /* Baralho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baralho.m; sourceTree = "<group>"; };
+		15E207A619C8E09800D76747 /* CartaDeJogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartaDeJogo.h; sourceTree = "<group>"; };
+		15E207A719C8E09800D76747 /* CartaDeJogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartaDeJogo.m; sourceTree = "<group>"; };
+		15E207A819C8E09800D76747 /* BaralhoDeJogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaralhoDeJogo.h; sourceTree = "<group>"; };
+		15E207A919C8E09800D76747 /* BaralhoDeJogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaralhoDeJogo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +96,19 @@
 		15E2077819C8E07500D76747 /* Combinismo */ = {
 			isa = PBXGroup;
 			children = (
-				15E2077D19C8E07500D76747 /* AppDelegate.h */,
-				15E2077E19C8E07500D76747 /* AppDelegate.m */,
-				15E2078019C8E07500D76747 /* ViewController.h */,
-				15E2078119C8E07500D76747 /* ViewController.m */,
-				15E2078319C8E07500D76747 /* Main.storyboard */,
-				15E2078619C8E07500D76747 /* Images.xcassets */,
-				15E2078819C8E07500D76747 /* LaunchScreen.xib */,
+				15E2079F19C8E09800D76747 /* Main.storyboard */,
+				15E207A019C8E09800D76747 /* JogoDeCartasViewControler.h */,
+				15E207A119C8E09800D76747 /* JogoDeCartasViewControler.m */,
+				08FFCDA419CA607A00DAD246 /* JogoDeCombinacaoDeCartas.h */,
+				08FFCDA519CA607A00DAD246 /* JogoDeCombinacaoDeCartas.m */,
+				15E207A219C8E09800D76747 /* Carta.h */,
+				15E207A319C8E09800D76747 /* Carta.m */,
+				15E207A419C8E09800D76747 /* Baralho.h */,
+				15E207A519C8E09800D76747 /* Baralho.m */,
+				15E207A619C8E09800D76747 /* CartaDeJogo.h */,
+				15E207A719C8E09800D76747 /* CartaDeJogo.m */,
+				15E207A819C8E09800D76747 /* BaralhoDeJogo.h */,
+				15E207A919C8E09800D76747 /* BaralhoDeJogo.m */,
 				15E2077919C8E07500D76747 /* Supporting Files */,
 			);
 			path = Combinismo;
@@ -96,6 +117,10 @@
 		15E2077919C8E07500D76747 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				15E2078619C8E07500D76747 /* Images.xcassets */,
+				15E2078819C8E07500D76747 /* LaunchScreen.xib */,
+				15E2077D19C8E07500D76747 /* AppDelegate.h */,
+				15E2077E19C8E07500D76747 /* AppDelegate.m */,
 				15E2077A19C8E07500D76747 /* Info.plist */,
 				15E2077B19C8E07500D76747 /* main.m */,
 			);
@@ -199,9 +224,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15E2078519C8E07500D76747 /* Main.storyboard in Resources */,
 				15E2078A19C8E07500D76747 /* LaunchScreen.xib in Resources */,
 				15E2078719C8E07500D76747 /* Images.xcassets in Resources */,
+				15E207AA19C8E09800D76747 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15E2078219C8E07500D76747 /* ViewController.m in Sources */,
+				08FFCDA619CA607A00DAD246 /* JogoDeCombinacaoDeCartas.m in Sources */,
+				15E207AD19C8E09800D76747 /* Baralho.m in Sources */,
 				15E2077F19C8E07500D76747 /* AppDelegate.m in Sources */,
+				15E207AF19C8E09800D76747 /* BaralhoDeJogo.m in Sources */,
+				15E207AE19C8E09800D76747 /* CartaDeJogo.m in Sources */,
+				15E207AC19C8E09800D76747 /* Carta.m in Sources */,
 				15E2077C19C8E07500D76747 /* main.m in Sources */,
+				15E207AB19C8E09800D76747 /* JogoDeCartasViewControler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +274,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		15E2078319C8E07500D76747 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15E2078419C8E07500D76747 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		15E2078819C8E07500D76747 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,6 +434,7 @@
 				15E2079B19C8E07500D76747 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15E2079C19C8E07500D76747 /* Build configuration list for PBXNativeTarget "CombinismoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +443,7 @@
 				15E2079E19C8E07500D76747 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
