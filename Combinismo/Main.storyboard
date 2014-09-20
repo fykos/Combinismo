@@ -23,172 +23,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eky-NM-RLx">
-                                <rect key="frame" x="6" y="28" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="verso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="frente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="carta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Oop-GW-3g0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eit-Jh-47O">
-                                <rect key="frame" x="85" y="28" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="verso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="frente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="carta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LkO-31-i1X"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qo-YD-6Nn">
-                                <rect key="frame" x="164" y="28" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="verso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="frente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="carta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sfj-AU-9m8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-x9-fvn">
-                                <rect key="frame" x="243" y="28" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="verso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="frente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="carta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tDh-cK-5I6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZO-6t-6Fg">
-                                <rect key="frame" x="6" y="136" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="verso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="frente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="carta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XbJ-V1-IxK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBg-5P-iiy">
-                                <rect key="frame" x="85" y="136" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="verso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="frente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="carta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ajx-Zd-yfD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7U-Hx-0LX">
-                                <rect key="frame" x="164" y="136" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="verso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="frente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="carta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hNM-cf-njA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFy-VV-2Wv">
-                                <rect key="frame" x="243" y="136" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="verso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="frente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="carta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VnO-OD-DmZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDD-a6-2EP">
-                                <rect key="frame" x="6" y="244" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="verso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="frente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="carta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GHS-1J-ZA5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLl-T8-4ey">
-                                <rect key="frame" x="85" y="244" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="verso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="frente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="carta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QTc-td-Hkx"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPF-ch-w0e">
                                 <rect key="frame" x="164" y="244" width="71" height="100"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="verso">
+                                <state key="normal" backgroundImage="cartaVerso">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" title="4♠" backgroundImage="frente">
+                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="carta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sod-iU-T4G"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXI-wZ-MuY">
-                                <rect key="frame" x="243" y="244" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="verso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="frente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="carta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j8d-5I-7mS"/>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mGn-JE-rhg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pontuação: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gwV-ZZ-k1u">
@@ -197,6 +43,160 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eky-NM-RLx">
+                                <rect key="frame" x="6" y="28" width="71" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="cartaVerso">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fGp-Rh-qPw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eit-Jh-47O">
+                                <rect key="frame" x="85" y="28" width="71" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="cartaVerso">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NpP-Ea-tnw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qo-YD-6Nn">
+                                <rect key="frame" x="164" y="28" width="71" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="cartaVerso">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OEt-30-3FR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-x9-fvn">
+                                <rect key="frame" x="243" y="28" width="71" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="cartaVerso">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rbI-OE-aJg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZO-6t-6Fg">
+                                <rect key="frame" x="6" y="136" width="71" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="cartaVerso">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="t5e-NZ-HDi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBg-5P-iiy">
+                                <rect key="frame" x="85" y="136" width="71" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="cartaVerso">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wIn-f9-OsQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7U-Hx-0LX">
+                                <rect key="frame" x="164" y="136" width="71" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="cartaVerso">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1Jk-47-yel"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFy-VV-2Wv">
+                                <rect key="frame" x="243" y="136" width="71" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="cartaVerso">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ffs-oO-4nn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDD-a6-2EP">
+                                <rect key="frame" x="6" y="244" width="71" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="cartaVerso">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Krq-s8-WGb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLl-T8-4ey">
+                                <rect key="frame" x="85" y="244" width="71" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="cartaVerso">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Kej-JZ-5i3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXI-wZ-MuY">
+                                <rect key="frame" x="243" y="244" width="71" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="cartaVerso">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Y9Q-yN-Ott"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.12504428266867149" green="0.63079568614130432" blue="0.23975210895194185" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -205,9 +205,19 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="carta" destination="Eky-NM-RLx" id="DYh-2D-5T6"/>
-                        <outlet property="sad" destination="Eky-NM-RLx" id="i4h-X2-oU0"/>
-                        <outlet property="tentativasLabel" destination="gwV-ZZ-k1u" id="Am9-oX-hEQ"/>
+                        <outlet property="pontuacaoLabel" destination="gwV-ZZ-k1u" id="e01-3O-qu0"/>
+                        <outletCollection property="cartasButton" destination="Eky-NM-RLx" id="fkU-Gv-uBF"/>
+                        <outletCollection property="cartasButton" destination="Eit-Jh-47O" id="Ozf-cW-BmA"/>
+                        <outletCollection property="cartasButton" destination="7Qo-YD-6Nn" id="JVm-3X-D1Z"/>
+                        <outletCollection property="cartasButton" destination="S5c-x9-fvn" id="ntH-3O-Ck7"/>
+                        <outletCollection property="cartasButton" destination="SZO-6t-6Fg" id="dWZ-8m-zha"/>
+                        <outletCollection property="cartasButton" destination="aBg-5P-iiy" id="HZp-o4-PaF"/>
+                        <outletCollection property="cartasButton" destination="k7U-Hx-0LX" id="hGZ-gA-YKw"/>
+                        <outletCollection property="cartasButton" destination="fFy-VV-2Wv" id="Ry8-BD-2OR"/>
+                        <outletCollection property="cartasButton" destination="uDD-a6-2EP" id="sZb-QZ-OZn"/>
+                        <outletCollection property="cartasButton" destination="fLl-T8-4ey" id="Qa6-6r-tJU"/>
+                        <outletCollection property="cartasButton" destination="PPF-ch-w0e" id="fbq-kS-m7a"/>
+                        <outletCollection property="cartasButton" destination="XXI-wZ-MuY" id="nns-J2-Obd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -216,8 +226,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="frente" width="71" height="100"/>
-        <image name="verso" width="71" height="100"/>
+        <image name="cartaFrente" width="71" height="100"/>
+        <image name="cartaVerso" width="71" height="100"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

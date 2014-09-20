@@ -23,7 +23,7 @@
 
 - (instancetype)init
 {
-    NSLog(@"Esta classe deve ser inicializada usando initComContagemDeCartas:usandoBaralho:");
+   /* NSLog(@"Esta classe deve ser inicializada usando initComContagemDeCartas:usandoBaralho:");*/
     return nil;
 }
 
@@ -55,7 +55,7 @@ static const int CUSTO_PARA_ESCOLHER = 1;
 - (void)escolherCartaNoIndex:(NSUInteger)index
 {
     Carta *carta = [self cartaNoIndex:index];
-    
+     NSLog(@"aqui");
     // so faz sentido se a carta ainda puder ser combinada...
     if (!carta.isCombinada) {
         
@@ -66,7 +66,7 @@ static const int CUSTO_PARA_ESCOLHER = 1;
         else{
             
             // ok. Nao combinada e não escolhida.
-            
+           
             // tenta combinar com outra carta
             // percorre todo o baralho procurando por cartas ESCOLHIDAS e NÃO COMBINADAS!
             for (Carta *outraCarta in self.cartas) {

@@ -8,34 +8,80 @@
 
 #import "JogoDeCartasViewControler.h"
 #import "BaralhoDeJogo.h"
+#import "JogoDeCombinacaoDeCartas.h"
 
 @interface JogoDeCartasViewControler ()
 
+// propertys dos itens - view
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cartasButton;
+@property (weak, nonatomic) IBOutlet UILabel *pontuacaoLabel;
 
-@property (weak, nonatomic) IBOutletC UIButton *carta;
-@property (weak, nonatomic) IBOutlet UILabel *tentativasLabel;
-@property (nonatomic) NSInteger tentativas;
+// propertys do jogo de combinacao de cartas - model
+@property (strong, nonatomic) JogoDeCombinacaoDeCartas *jogo;
+
 @end
 
 @implementation JogoDeCartasViewControler
 
-- (void)carta:(UIButton *)cartaBotao {
+
+// chamar o jogo que está lá em cima no propery, ao mesmo tempo modifico o getter fazendo uma lease stantiation
+-(JogoDeCombinacaoDeCartas *)jogo{
     
-    if(!cartaBotao.selected){
-        self.tentativas++;
-    
-        _tentativasLabel.text = [NSString stringWithFormat:@"Tentativas: %d",self.tentativas];
-    
-        BaralhoDeJogo *baralhoDeJogo;
-        baralhoDeJogo = [[BaralhoDeJogo alloc] init]; // problema, estou inicializando o baralho toda vez que clica na carta, assim as cartas nunca acabam, fail
-    
-        Carta *cartaAleatoria = baralhoDeJogo.tirarCartaAleatoria;
+    if(!_jogo){
         
-        [cartaBotao setTitle:cartaAleatoria.conteudo forState:UIControlStateSelected];
+        _jogo = [[[JogoDeCombinacaoDeCartas alloc] init] initComContagemDeCartas:12 usandoBaralho:[self criarBaralho]];
+    
     }
-    cartaBotao.selected = !cartaBotao.selected;
+    return _jogo;
+}
+
+
+- (BaralhoDeJogo *)criarBaralho
+{
+    return [[BaralhoDeJogo alloc] init];
+}
+
+- (IBAction)clicaCarta:(UIButton *)carta {
+    
+    NSUInteger index = [self.cartasButton indexOfObject:carta];
+    [self.jogo escolherCartaNoIndex:index];
+    [self atualizarUI];
     
 }
+
+- (void)atualizarUI
+{
+    for (UIButton *cartaButton in self.cartasButton) {
+        NSUInteger cartaIndex = [self.cartasButton indexOfObject:cartaButton];
+        Carta *carta = [self.jogo cartaNoIndex:cartaIndex];
+        
+        [cartaButton setTitle:[self tituloParaACarta:carta] forState:UIControlStateNormal];
+        [cartaButton setBackgroundImage:[self imagemParaACarta:carta] forState:UIControlStateNormal];
+        
+        if(carta.isCombinada){
+            NSLog(@"combinada");
+            cartaButton.enabled=NO;
+            
+        }else{
+            NSLog(@"nao combinada");
+            cartaButton.enabled=YES;
+        }
+        
+    }
+    
+    self.pontuacaoLabel.text = [NSString stringWithFormat:@"Pontuação: %ld", (long)self.jogo.pontuacao];
+}
+
+- (NSString *)tituloParaACarta:(Carta *)carta
+{
+    return carta.isEscolhida ? carta.conteudo : @"";
+}
+
+- (UIImage *)imagemParaACarta:(Carta *)carta
+{
+    return [UIImage imageNamed: carta.isEscolhida ? @"cartaFrente" : @"cartaVerso"];
+}
+
 
 
 @end
