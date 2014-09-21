@@ -35,7 +35,6 @@
     return _jogo;
 }
 
-
 - (BaralhoDeJogo *)criarBaralho
 {
     return [[BaralhoDeJogo alloc] init];
