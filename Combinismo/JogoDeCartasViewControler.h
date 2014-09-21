@@ -11,7 +11,5 @@
 @interface JogoDeCartasViewControler : UIViewController
 
 
-
-
 @end
 

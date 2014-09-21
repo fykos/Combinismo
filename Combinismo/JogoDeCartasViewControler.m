@@ -29,11 +29,12 @@
     
     if(!_jogo){
         
-        _jogo = [[[JogoDeCombinacaoDeCartas alloc] init] initComContagemDeCartas:12 usandoBaralho:[self criarBaralho]];
+        _jogo = [[JogoDeCombinacaoDeCartas alloc] initComContagemDeCartas:12 usandoBaralho:[self criarBaralho]];
     
     }
     return _jogo;
 }
+
 
 - (BaralhoDeJogo *)criarBaralho
 {
@@ -56,15 +57,8 @@
         
         [cartaButton setTitle:[self tituloParaACarta:carta] forState:UIControlStateNormal];
         [cartaButton setBackgroundImage:[self imagemParaACarta:carta] forState:UIControlStateNormal];
-        
-        if(carta.isCombinada){
-            NSLog(@"combinada");
-            cartaButton.enabled=NO;
-            
-        }else{
-            NSLog(@"nao combinada");
-            cartaButton.enabled=YES;
-        }
+                
+        cartaButton.enabled = !carta.isCombinada;
         
     }
     

@@ -13,7 +13,6 @@
 @property (strong, nonatomic) NSString *conteudo;
 @property (nonatomic, getter=isEscolhida) BOOL escolhida;
 @property (nonatomic, getter=isCombinada) BOOL combinada;
-
 -(int)combinar:(NSArray *)outrasCartas;
 
 @end

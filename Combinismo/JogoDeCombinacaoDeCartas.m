@@ -7,6 +7,7 @@
 //
 
 #import "JogoDeCombinacaoDeCartas.h"
+#import "CartaDeJogo.h"
 
 @interface JogoDeCombinacaoDeCartas ()
 @property (nonatomic, readwrite) NSInteger pontuacao;
@@ -15,25 +16,31 @@
 
 @implementation JogoDeCombinacaoDeCartas
 
+
+//lease instansiation para quando chamar a nsmutablearray cartas fazer o alloc init
 - (NSMutableArray *)cartas
 {
     if (!_cartas) _cartas = [[NSMutableArray alloc] init];
     return _cartas;
 }
 
+// deu um return nil no init para poder fazer um init personalizado
 - (instancetype)init
 {
-   /* NSLog(@"Esta classe deve ser inicializada usando initComContagemDeCartas:usandoBaralho:");*/
+    NSLog(@"Esta classe deve ser inicializada usando initComContagemDeCartas:usandoBaralho:");
     return nil;
 }
 
+// cria o init personalizado... initComContagemDeCartas "doispontos" usandoBaralho "doispontos"
 - (instancetype)initComContagemDeCartas:(NSUInteger)contagem usandoBaralho:(Baralho *)baralho
 {
     self = [super init];
     
     if (self) {
+        
+        //faz o looping para preencher o cartas que foi feito o lease instantiation com a quantidade (contagem) de cartas do (baralho)
         for (int i = 0; i < contagem; i++) {
-            Carta *carta = [baralho tirarCartaAleatoria];
+            CartaDeJogo *carta = [baralho tirarCartaAleatoria];
             
             if (carta) {
                 [self.cartas addObject:carta];
@@ -48,14 +55,19 @@
     return self;
 }
 
+//cria constantes
 static const int BONUS_POR_COMBINACAO = 4;
 static const int PENALIDADE_POR_NAO_COMBINAR = 2;
 static const int CUSTO_PARA_ESCOLHER = 1;
 
+
+// metodo que vai escolher uma carta (que foi feito o lease instatiation) usando o index
 - (void)escolherCartaNoIndex:(NSUInteger)index
 {
-    Carta *carta = [self cartaNoIndex:index];
-     NSLog(@"aqui");
+    
+    // cria uma variavel carta a partir do metodo cartaNoIndex que devolve uma carta do nsmutablearray cartas que foi feito o lease instantiation
+    CartaDeJogo *carta = [self cartaNoIndex:index];
+    
     // so faz sentido se a carta ainda puder ser combinada...
     if (!carta.isCombinada) {
         
@@ -76,6 +88,9 @@ static const int CUSTO_PARA_ESCOLHER = 1;
                     // encontramos a carta!
                     
                     // vamos combiná-la com outra carta.
+                    
+                    
+                    NSLog(@"AQUI");
                     int pontuacaoDaCombinacao = [carta combinar:@[outraCarta]]; // retorna o quão boa a combinacao é
                     
                     if (pontuacaoDaCombinacao) {
@@ -109,7 +124,7 @@ static const int CUSTO_PARA_ESCOLHER = 1;
     }
 }
 
-- (Carta *)cartaNoIndex:(NSUInteger)index
+- (CartaDeJogo *)cartaNoIndex:(NSUInteger)index
 {
     return index < self.cartas.count ? self.cartas[index] : nil;
 }

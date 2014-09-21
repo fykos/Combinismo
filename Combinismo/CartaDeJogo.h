@@ -10,8 +10,10 @@
 #import "Carta.h"
 
 @interface CartaDeJogo : Carta
+
 @property (strong,nonatomic) NSString *naipe;
 @property (nonatomic) NSUInteger numero;
+
 + (NSArray *)naipesValidos;
 + (NSUInteger)numeroMaximo;
 @end

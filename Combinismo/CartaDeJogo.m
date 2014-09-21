@@ -9,9 +9,13 @@
 #import "CartaDeJogo.h"
 
 @implementation CartaDeJogo
+
+
 -(NSString *)conteudo
 {
+    
     NSArray *numerosStrings = [CartaDeJogo numerosString];
+    
     return [numerosStrings[self.numero] stringByAppendingString:self.naipe];
 }
 @synthesize naipe = _naipe;
