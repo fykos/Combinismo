@@ -9,9 +9,14 @@
 #import "JogoDeCombinacaoDeCartas.h"
 #import "CartaDeJogo.h"
 
+
+
 @interface JogoDeCombinacaoDeCartas ()
+
 @property (nonatomic, readwrite) NSInteger pontuacao;
 @property (strong, nonatomic) NSMutableArray *cartas; // de Cartas
+@property (strong, nonatomic) NSNotificationCenter *notificacaoRecebida;
+
 @end
 
 @implementation JogoDeCombinacaoDeCartas
@@ -68,6 +73,8 @@ static const int CUSTO_PARA_ESCOLHER = 1;
     // cria uma variavel carta a partir do metodo cartaNoIndex que devolve uma carta do nsmutablearray cartas que foi feito o lease instantiation
     Carta *carta = [self cartaNoIndex:index];
     
+    
+    
     // so faz sentido se a carta ainda puder ser combinada...
     if (!carta.isCombinada) {
         
@@ -76,7 +83,7 @@ static const int CUSTO_PARA_ESCOLHER = 1;
             carta.escolhida = NO;
         }
         else{
-            
+           
             // ok. Nao combinada e não escolhida.
            
             // tenta combinar com outra carta
@@ -110,8 +117,26 @@ static const int CUSTO_PARA_ESCOLHER = 1;
                         // volta ela para não escolhida.
                         outraCarta.escolhida = NO;
                     }
+                    
+                    
+                    NSString *pontos = [NSString stringWithFormat:@"%i",pontuacaoDaCombinacao];
+                    
+                    // posta uma nova notificacao
+                    NSString *const nomeDoCanal = @"canalNotificationElis";
+                    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+                    [nc postNotificationName:nomeDoCanal
+                                      object:self
+                                    userInfo: @{
+                                                @"cartaA":carta,
+                                                @"cartaB":outraCarta,
+                                                @"pontuacao":pontos
+                                                }
+                     ];
+
+                    
                 }
             }
+            
             
             // debita a pontuacao por escolher
             self.pontuacao -= CUSTO_PARA_ESCOLHER;
@@ -127,5 +152,8 @@ static const int CUSTO_PARA_ESCOLHER = 1;
 {
     return index < self.cartas.count ? self.cartas[index] : nil;
 }
+
+
+
 
 @end

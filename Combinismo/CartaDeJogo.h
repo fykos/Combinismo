@@ -9,7 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "Carta.h"
 
+
+////// extern NSString *const nomeDoCanal;
+
 @interface CartaDeJogo : Carta
+
+
 
 @property (strong,nonatomic) NSString *naipe;
 @property (nonatomic) NSUInteger numero;

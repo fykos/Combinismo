@@ -197,14 +197,23 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Y9Q-yN-Ott"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Boa Sorte!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q7-3L-RCR">
+                                <rect key="frame" x="6" y="429" width="308" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.12504428266867149" green="0.63079568614130432" blue="0.23975210895194185" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Teg-OG-i5s" firstAttribute="top" secondItem="gwV-ZZ-k1u" secondAttribute="bottom" constant="20" id="B2u-HQ-Rij"/>
+                            <constraint firstAttribute="centerX" secondItem="6q7-3L-RCR" secondAttribute="centerX" id="KoH-dl-DTb"/>
                             <constraint firstItem="gwV-ZZ-k1u" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ODS-ad-6pa"/>
+                            <constraint firstAttribute="centerY" secondItem="6q7-3L-RCR" secondAttribute="centerY" constant="-155.5" id="gVM-xU-iWu"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="avisoLabel" destination="6q7-3L-RCR" id="XNe-nH-Pwm"/>
                         <outlet property="pontuacaoLabel" destination="gwV-ZZ-k1u" id="e01-3O-qu0"/>
                         <outletCollection property="cartasButton" destination="Eky-NM-RLx" id="fkU-Gv-uBF"/>
                         <outletCollection property="cartasButton" destination="Eit-Jh-47O" id="Ozf-cW-BmA"/>

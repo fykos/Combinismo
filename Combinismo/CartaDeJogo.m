@@ -11,15 +11,10 @@
 @implementation CartaDeJogo
 
 
-
 -(int)combinar:(NSArray *)outrasCartas
 {
     int pontuacao = 0;
     CartaDeJogo *minhaCarta = [outrasCartas firstObject];
-    
-    
-    // náo consegui extrair o numero e o naipe do conteudo para
-    
     
     if([minhaCarta.naipe isEqualToString:self.naipe]){
         pontuacao = 1;
@@ -27,7 +22,6 @@
         pontuacao = 4;
     }
     
-
     return pontuacao;
     
     

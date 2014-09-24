@@ -9,12 +9,15 @@
 #import "JogoDeCartasViewControler.h"
 #import "BaralhoDeJogo.h"
 #import "JogoDeCombinacaoDeCartas.h"
+#import "CartaDeJogo.h"
+
 
 @interface JogoDeCartasViewControler ()
 
 // propertys dos itens - view
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cartasButton;
 @property (weak, nonatomic) IBOutlet UILabel *pontuacaoLabel;
+@property (weak, nonatomic) IBOutlet UILabel *avisoLabel;
 
 // propertys do jogo de combinacao de cartas - model
 @property (strong, nonatomic) JogoDeCombinacaoDeCartas *jogo;
@@ -76,6 +79,48 @@
 }
 
 
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // cria a estacao de radio do nsnotification
+    NSString *const nomeDoCanal = @"canalNotificationElis";
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    [nc addObserver:self
+           selector:@selector(notificacaoRecebida:)
+               name:nomeDoCanal
+             object:self.jogo
+     ];
+    
+}
+
+
+// metodo que é chamado sempre que é postado uma nova notificacao
+- (void)notificacaoRecebida:(NSNotification *)notificacao
+{
+    
+    //NSString *canal = notificacao.name;
+    //id estacao = notificacao.object;
+    NSDictionary *infos = notificacao.userInfo;
+    
+    CartaDeJogo *cartaA = infos[@"cartaA"];
+    CartaDeJogo *cartaB = infos[@"cartaB"];
+    
+    NSString *texto;
+    
+    // faz uma verificacao de naipe e numero, poderia tambem verificar se for 1=naipe e 4=numero e 0=naocombinam
+    if([cartaA.naipe isEqualToString:cartaB.naipe]) {
+        texto=@"combinaram o naipe";
+    }else if (cartaA.numero == cartaB.numero) {
+        texto=@"combinaram o número";
+    }else{
+        texto=@"não combinaram";
+    }
+    
+    self.avisoLabel.text = [NSString stringWithFormat:@"%@ e %@ %@",cartaB.conteudo,cartaA.conteudo,texto];
+    
+}
 
 
 @end
