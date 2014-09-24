@@ -24,7 +24,7 @@
 @implementation JogoDeCartasViewControler
 
 
-// chamar o jogo que está lá em cima no propery, ao mesmo tempo modifico o getter fazendo uma lease stantiation
+// lembrete, chamar o jogo que está lá em cima no propery, ao mesmo tempo modifico o getter fazendo uma lease stantiation
 -(JogoDeCombinacaoDeCartas *)jogo{
     
     if(!_jogo){
