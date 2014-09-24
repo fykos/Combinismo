@@ -11,10 +11,35 @@
 @implementation CartaDeJogo
 
 
+
+-(int)combinar:(NSArray *)outrasCartas
+{
+    int pontuacao = 0;
+    CartaDeJogo *minhaCarta = [outrasCartas firstObject];
+    
+    
+    // náo consegui extrair o numero e o naipe do conteudo para
+    
+    
+    if([minhaCarta.naipe isEqualToString:self.naipe]){
+        pontuacao = 1;
+    }else if(minhaCarta.numero == self.numero){
+        pontuacao = 4;
+    }
+    
+
+    return pontuacao;
+    
+    
+}
+
 -(NSString *)conteudo
 {
     
     NSArray *numerosStrings = [CartaDeJogo numerosString];
+    
+    //_numero = numerosStrings[self.numero];
+    //_naipe =
     
     return [numerosStrings[self.numero] stringByAppendingString:self.naipe];
 }

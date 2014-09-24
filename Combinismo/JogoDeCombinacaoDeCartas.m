@@ -40,7 +40,7 @@
         
         //faz o looping para preencher o cartas que foi feito o lease instantiation com a quantidade (contagem) de cartas do (baralho)
         for (int i = 0; i < contagem; i++) {
-            CartaDeJogo *carta = [baralho tirarCartaAleatoria];
+            Carta *carta = [baralho tirarCartaAleatoria];
             
             if (carta) {
                 [self.cartas addObject:carta];
@@ -66,7 +66,7 @@ static const int CUSTO_PARA_ESCOLHER = 1;
 {
     
     // cria uma variavel carta a partir do metodo cartaNoIndex que devolve uma carta do nsmutablearray cartas que foi feito o lease instantiation
-    CartaDeJogo *carta = [self cartaNoIndex:index];
+    Carta *carta = [self cartaNoIndex:index];
     
     // so faz sentido se a carta ainda puder ser combinada...
     if (!carta.isCombinada) {
@@ -90,7 +90,6 @@ static const int CUSTO_PARA_ESCOLHER = 1;
                     // vamos combiná-la com outra carta.
                     
                     
-                    NSLog(@"AQUI");
                     int pontuacaoDaCombinacao = [carta combinar:@[outraCarta]]; // retorna o quão boa a combinacao é
                     
                     if (pontuacaoDaCombinacao) {

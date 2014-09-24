@@ -660,27 +660,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Combinismo/JogoDeCombinacaoDeCartas.m"
-            timestampString = "433022000.877019"
+            timestampString = "433269455.728016"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "-escolherCartaNoIndex:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Combinismo/JogoDeCombinacaoDeCartas.m"
-            timestampString = "433022000.877019"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "-escolherCartaNoIndex:"
             landmarkType = "5">
          </BreakpointContent>
@@ -723,12 +707,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Combinismo/Carta.m"
-            timestampString = "433028541.410928"
+            filePath = "Combinismo/CartaDeJogo.m"
+            timestampString = "433269438.526369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "-combinar:"
             landmarkType = "5">
          </BreakpointContent>
@@ -739,12 +723,28 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Combinismo/Carta.m"
-            timestampString = "433022827.785945"
+            filePath = "Combinismo/CartaDeJogo.m"
+            timestampString = "433269623.23611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-combinar:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Combinismo/CartaDeJogo.m"
+            timestampString = "433269722.62564"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "-combinar:"
             landmarkType = "5">
          </BreakpointContent>
