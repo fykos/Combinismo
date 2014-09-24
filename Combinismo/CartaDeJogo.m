@@ -32,9 +32,6 @@
     
     NSArray *numerosStrings = [CartaDeJogo numerosString];
     
-    //_numero = numerosStrings[self.numero];
-    //_naipe =
-    
     return [numerosStrings[self.numero] stringByAppendingString:self.naipe];
 }
 @synthesize naipe = _naipe;

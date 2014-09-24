@@ -11,6 +11,8 @@
 @interface Carta : NSObject
 
 @property (strong, nonatomic) NSString *conteudo;
+@property (nonatomic) NSUInteger numero;
+@property (strong, nonatomic) NSString *naipe;
 @property (nonatomic, getter=isEscolhida) BOOL escolhida;
 @property (nonatomic, getter=isCombinada) BOOL combinada;
 -(int)combinar:(NSArray *)outrasCartas;

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		08FFCDA619CA607A00DAD246 /* JogoDeCombinacaoDeCartas.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FFCDA519CA607A00DAD246 /* JogoDeCombinacaoDeCartas.m */; };
+		15228D7719D347A100A51804 /* CartaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15228D7619D347A100A51804 /* CartaView.m */; };
 		15E2077C19C8E07500D76747 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2077B19C8E07500D76747 /* main.m */; };
 		15E2077F19C8E07500D76747 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E2077E19C8E07500D76747 /* AppDelegate.m */; };
 		15E2078719C8E07500D76747 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15E2078619C8E07500D76747 /* Images.xcassets */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		08FFCDA419CA607A00DAD246 /* JogoDeCombinacaoDeCartas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JogoDeCombinacaoDeCartas.h; sourceTree = "<group>"; };
 		08FFCDA519CA607A00DAD246 /* JogoDeCombinacaoDeCartas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JogoDeCombinacaoDeCartas.m; sourceTree = "<group>"; };
+		15228D7519D347A100A51804 /* CartaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartaView.h; sourceTree = "<group>"; };
+		15228D7619D347A100A51804 /* CartaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartaView.m; sourceTree = "<group>"; };
 		15E2077619C8E07500D76747 /* Combinismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Combinismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E2077A19C8E07500D76747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15E2077B19C8E07500D76747 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 				15E207A719C8E09800D76747 /* CartaDeJogo.m */,
 				15E207A819C8E09800D76747 /* BaralhoDeJogo.h */,
 				15E207A919C8E09800D76747 /* BaralhoDeJogo.m */,
+				15228D7519D347A100A51804 /* CartaView.h */,
+				15228D7619D347A100A51804 /* CartaView.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				15E207AD19C8E09800D76747 /* Baralho.m in Sources */,
 				15E2077F19C8E07500D76747 /* AppDelegate.m in Sources */,
 				15E207AF19C8E09800D76747 /* BaralhoDeJogo.m in Sources */,
+				15228D7719D347A100A51804 /* CartaView.m in Sources */,
 				15E207AE19C8E09800D76747 /* CartaDeJogo.m in Sources */,
 				15E207AC19C8E09800D76747 /* Carta.m in Sources */,
 				15E2077C19C8E07500D76747 /* main.m in Sources */,

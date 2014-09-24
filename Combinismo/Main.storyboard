@@ -23,186 +23,186 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPF-ch-w0e">
-                                <rect key="frame" x="164" y="244" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="cartaVerso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mGn-JE-rhg"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pontuação: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gwV-ZZ-k1u">
                                 <rect key="frame" x="16" y="527" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eky-NM-RLx">
-                                <rect key="frame" x="6" y="28" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="cartaVerso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fGp-Rh-qPw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eit-Jh-47O">
-                                <rect key="frame" x="85" y="28" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="cartaVerso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NpP-Ea-tnw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qo-YD-6Nn">
-                                <rect key="frame" x="164" y="28" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="cartaVerso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OEt-30-3FR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-x9-fvn">
-                                <rect key="frame" x="243" y="28" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="cartaVerso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rbI-OE-aJg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZO-6t-6Fg">
-                                <rect key="frame" x="6" y="136" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="cartaVerso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="t5e-NZ-HDi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBg-5P-iiy">
-                                <rect key="frame" x="85" y="136" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="cartaVerso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wIn-f9-OsQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7U-Hx-0LX">
-                                <rect key="frame" x="164" y="136" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="cartaVerso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1Jk-47-yel"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFy-VV-2Wv">
-                                <rect key="frame" x="243" y="136" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="cartaVerso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ffs-oO-4nn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDD-a6-2EP">
-                                <rect key="frame" x="6" y="244" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="cartaVerso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Krq-s8-WGb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLl-T8-4ey">
-                                <rect key="frame" x="85" y="244" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="cartaVerso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Kej-JZ-5i3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXI-wZ-MuY">
-                                <rect key="frame" x="243" y="244" width="71" height="100"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="cartaVerso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="4♠" backgroundImage="cartaFrente">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Y9Q-yN-Ott"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Boa Sorte!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q7-3L-RCR">
                                 <rect key="frame" x="6" y="429" width="308" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGV-OL-2lV" customClass="CartaView">
+                                <rect key="frame" x="6" y="28" width="71" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imagemVerso" value="cartaVerso"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="raioCantos">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zqd-rw-F1u"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4g-lg-hR1" customClass="CartaView">
+                                <rect key="frame" x="85" y="28" width="71" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imagemVerso" value="cartaVerso"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="raioCantos">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4b3-so-XlZ"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzF-Hl-Sro" customClass="CartaView">
+                                <rect key="frame" x="164" y="28" width="71" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imagemVerso" value="cartaVerso"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="raioCantos">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SYa-o1-aCo"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tzo-0S-O47" customClass="CartaView">
+                                <rect key="frame" x="243" y="28" width="71" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imagemVerso" value="cartaVerso"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="raioCantos">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bN7-xO-Vin"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Rh-JA-Qej" customClass="CartaView">
+                                <rect key="frame" x="6" y="136" width="71" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imagemVerso" value="cartaVerso"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="raioCantos">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="shL-wl-sBW"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8sJ-a4-AFq" customClass="CartaView">
+                                <rect key="frame" x="85" y="136" width="71" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imagemVerso" value="cartaVerso"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="raioCantos">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZQs-xm-0DA"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WLi-KF-nRl" customClass="CartaView">
+                                <rect key="frame" x="164" y="136" width="71" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imagemVerso" value="cartaVerso"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="raioCantos">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CDm-Ei-AJg"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kT2-hS-gvS" customClass="CartaView">
+                                <rect key="frame" x="243" y="136" width="71" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imagemVerso" value="cartaVerso"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="raioCantos">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yJf-8G-Iwj"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sP2-FT-i8m" customClass="CartaView">
+                                <rect key="frame" x="6" y="244" width="71" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imagemVerso" value="cartaVerso"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="raioCantos">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FAh-ri-WQ4"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jxq-7B-57e" customClass="CartaView">
+                                <rect key="frame" x="85" y="244" width="71" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imagemVerso" value="cartaVerso"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="raioCantos">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3oT-77-KqZ"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2F-lU-WXX" customClass="CartaView">
+                                <rect key="frame" x="164" y="244" width="71" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imagemVerso" value="cartaVerso"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="raioCantos">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0ws-YW-qLa"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U9z-VT-o2C" customClass="CartaView">
+                                <rect key="frame" x="243" y="244" width="71" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imagemVerso" value="cartaVerso"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="raioCantos">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ipn-7p-OUt"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.12504428266867149" green="0.63079568614130432" blue="0.23975210895194185" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -215,18 +215,18 @@
                     <connections>
                         <outlet property="avisoLabel" destination="6q7-3L-RCR" id="XNe-nH-Pwm"/>
                         <outlet property="pontuacaoLabel" destination="gwV-ZZ-k1u" id="e01-3O-qu0"/>
-                        <outletCollection property="cartasButton" destination="Eky-NM-RLx" id="fkU-Gv-uBF"/>
-                        <outletCollection property="cartasButton" destination="Eit-Jh-47O" id="Ozf-cW-BmA"/>
-                        <outletCollection property="cartasButton" destination="7Qo-YD-6Nn" id="JVm-3X-D1Z"/>
-                        <outletCollection property="cartasButton" destination="S5c-x9-fvn" id="ntH-3O-Ck7"/>
-                        <outletCollection property="cartasButton" destination="SZO-6t-6Fg" id="dWZ-8m-zha"/>
-                        <outletCollection property="cartasButton" destination="aBg-5P-iiy" id="HZp-o4-PaF"/>
-                        <outletCollection property="cartasButton" destination="k7U-Hx-0LX" id="hGZ-gA-YKw"/>
-                        <outletCollection property="cartasButton" destination="fFy-VV-2Wv" id="Ry8-BD-2OR"/>
-                        <outletCollection property="cartasButton" destination="uDD-a6-2EP" id="sZb-QZ-OZn"/>
-                        <outletCollection property="cartasButton" destination="fLl-T8-4ey" id="Qa6-6r-tJU"/>
-                        <outletCollection property="cartasButton" destination="PPF-ch-w0e" id="fbq-kS-m7a"/>
-                        <outletCollection property="cartasButton" destination="XXI-wZ-MuY" id="nns-J2-Obd"/>
+                        <outletCollection property="cartasButton" destination="ZGV-OL-2lV" id="kSo-jU-srg"/>
+                        <outletCollection property="cartasButton" destination="i4g-lg-hR1" id="TyN-2G-tfv"/>
+                        <outletCollection property="cartasButton" destination="pzF-Hl-Sro" id="0WF-sZ-a0N"/>
+                        <outletCollection property="cartasButton" destination="tzo-0S-O47" id="qy2-Gv-nDv"/>
+                        <outletCollection property="cartasButton" destination="1Rh-JA-Qej" id="JYp-lC-kYK"/>
+                        <outletCollection property="cartasButton" destination="8sJ-a4-AFq" id="Uyp-2I-vzn"/>
+                        <outletCollection property="cartasButton" destination="WLi-KF-nRl" id="jGq-p6-D5u"/>
+                        <outletCollection property="cartasButton" destination="kT2-hS-gvS" id="8ka-GH-O7v"/>
+                        <outletCollection property="cartasButton" destination="sP2-FT-i8m" id="N3E-xB-sY1"/>
+                        <outletCollection property="cartasButton" destination="Jxq-7B-57e" id="aR5-Ph-npW"/>
+                        <outletCollection property="cartasButton" destination="a2F-lU-WXX" id="dyN-OP-BRz"/>
+                        <outletCollection property="cartasButton" destination="U9z-VT-o2C" id="bjf-xz-iI6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -235,7 +235,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cartaFrente" width="71" height="100"/>
         <image name="cartaVerso" width="71" height="100"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

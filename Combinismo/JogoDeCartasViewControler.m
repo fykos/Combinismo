@@ -10,12 +10,13 @@
 #import "BaralhoDeJogo.h"
 #import "JogoDeCombinacaoDeCartas.h"
 #import "CartaDeJogo.h"
+#import "CartaView.h"
 
 
 @interface JogoDeCartasViewControler ()
 
 // propertys dos itens - view
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cartasButton;
+@property (strong, nonatomic) IBOutletCollection(CartaView) NSArray *cartasButton;
 @property (weak, nonatomic) IBOutlet UILabel *pontuacaoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *avisoLabel;
 
@@ -44,7 +45,7 @@
     return [[BaralhoDeJogo alloc] init];
 }
 
-- (IBAction)clicaCarta:(UIButton *)carta {
+- (IBAction)clicaCarta:(CartaView *)carta {
     
     NSUInteger index = [self.cartasButton indexOfObject:carta];
     [self.jogo escolherCartaNoIndex:index];
@@ -54,14 +55,25 @@
 
 - (void)atualizarUI
 {
-    for (UIButton *cartaButton in self.cartasButton) {
+    
+    for (CartaView *cartaButton in self.cartasButton) {
         NSUInteger cartaIndex = [self.cartasButton indexOfObject:cartaButton];
         Carta *carta = [self.jogo cartaNoIndex:cartaIndex];
         
+        cartaButton.naipe = carta.naipe;
+        cartaButton.numero = [NSString stringWithFormat:@"%lu", (unsigned long)carta.numero];
+        
+        cartaButton.selecionada = carta.isEscolhida;
+        cartaButton.ativa = carta.isCombinada;
+        
+        [cartaButton setAlpha:carta.isCombinada?0.5:1];
+        
+        
+        /*
         [cartaButton setTitle:[self tituloParaACarta:carta] forState:UIControlStateNormal];
         [cartaButton setBackgroundImage:[self imagemParaACarta:carta] forState:UIControlStateNormal];
                 
-        cartaButton.enabled = !carta.isCombinada;
+        cartaButton.enabled = !carta.isCombinada;*/
         
     }
     
@@ -109,7 +121,6 @@
     
     NSString *texto;
     
-    // faz uma verificacao de naipe e numero, poderia tambem verificar se for 1=naipe e 4=numero e 0=naocombinam
     if([cartaA.naipe isEqualToString:cartaB.naipe]) {
         texto=@"combinaram o naipe";
     }else if (cartaA.numero == cartaB.numero) {
