@@ -35,6 +35,7 @@
     return [numerosStrings[self.numero] stringByAppendingString:self.naipe];
 }
 @synthesize naipe = _naipe;
+@synthesize numero = _numero;
 +(NSArray *)naipesValidos
 {
     return @[@"♥",@"♦",@"♣",@"♠"];
