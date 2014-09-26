@@ -91,8 +91,6 @@
 				15E207A719C8E09800D76747 /* CartaDeJogo.m */,
 				15E207A819C8E09800D76747 /* BaralhoDeJogo.h */,
 				15E207A919C8E09800D76747 /* BaralhoDeJogo.m */,
-				15228D7519D347A100A51804 /* CartaView.h */,
-				15228D7619D347A100A51804 /* CartaView.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -121,6 +119,7 @@
 				15E2079F19C8E09800D76747 /* Main.storyboard */,
 				15E207A019C8E09800D76747 /* JogoDeCartasViewControler.h */,
 				15E207A119C8E09800D76747 /* JogoDeCartasViewControler.m */,
+				15ED783119D5B96800F45EDC /* ViewsPersonalizadas */,
 				15CB9AB119CCBA960045463F /* Model */,
 				15E2077919C8E07500D76747 /* Supporting Files */,
 			);
@@ -155,6 +154,15 @@
 				15E2079419C8E07500D76747 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15ED783119D5B96800F45EDC /* ViewsPersonalizadas */ = {
+			isa = PBXGroup;
+			children = (
+				15228D7519D347A100A51804 /* CartaView.h */,
+				15228D7619D347A100A51804 /* CartaView.m */,
+			);
+			name = ViewsPersonalizadas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

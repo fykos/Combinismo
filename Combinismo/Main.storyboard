@@ -203,6 +203,16 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ipn-7p-OUt"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="vUo-ql-ZGw">
+                                <rect key="frame" x="218" y="523" width="96" height="30"/>
+                                <state key="normal" title="Novo Jogo">
+                                    <color key="titleColor" red="0.9932675017" green="1" blue="0.96877393580000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicaNovo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BZ9-S6-uHx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.12504428266867149" green="0.63079568614130432" blue="0.23975210895194185" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>

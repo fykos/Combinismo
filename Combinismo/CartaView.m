@@ -50,13 +50,12 @@
     [self setNeedsDisplay];
 }
 -(void)setSelecionada:(BOOL)selecionada
-{
+{   
     _selecionada = selecionada;
     [self setNeedsDisplay];
 }
 -(void) setAtiva:(BOOL)ativa
-{
-    _ativa = ativa;
+{    _ativa = ativa;
     [self setNeedsDisplay];
 }
 

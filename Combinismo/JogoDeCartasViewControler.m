@@ -52,6 +52,35 @@
     [self atualizarUI];
     
 }
+- (IBAction)clicaNovo:(UIButton *)novoJogo {
+    
+    for (CartaView *cartaButton in self.cartasButton) {
+        
+        [UIView transitionWithView:cartaButton
+                          duration:0.5
+                           options:UIViewAnimationOptionCurveLinear
+                        animations:^{
+                            [cartaButton setAlpha:1];
+                        }
+                        completion:nil];
+        
+        if(cartaButton.isSelecionada){
+        [UIView transitionWithView:cartaButton
+                          duration:1.0
+                           options:UIViewAnimationOptionTransitionFlipFromRight
+                        animations:nil
+                        completion:nil];
+        }
+        
+        cartaButton.selecionada = NO;
+        cartaButton.ativa = NO;
+    }
+    
+    _jogo=nil;
+    
+    self.avisoLabel.text=@"Novo jogo iniciado!";
+    
+}
 
 - (void)atualizarUI
 {
@@ -63,17 +92,56 @@
         cartaButton.naipe = carta.naipe;
         cartaButton.numero = [NSString stringWithFormat:@"%lu", (unsigned long)carta.numero];
         
+        
+        // se a carta no index é escolhida e não combinada
+        // então a carta é animada abrindo
+        if(carta.isEscolhida && !carta.isCombinada){
+            [UIView transitionWithView:cartaButton
+                              duration:1.0
+                               options:UIViewAnimationOptionTransitionFlipFromLeft
+                            animations:nil
+                            completion:nil];
+        }
+        
+        // se a carta atual do looping é selecionada e a carta no index não é combinada
+        // então a carta é animada fechando
+        if(cartaButton.isSelecionada && !carta.isCombinada){
+            [UIView transitionWithView:cartaButton
+                              duration:1.0
+                               options:UIViewAnimationOptionTransitionFlipFromRight
+                            animations:nil
+                            completion:nil];
+        }
+        
+        // a carta no index é escolhida e combinada ...
+        if(carta.isEscolhida && carta.isCombinada){
+            
+            // ... se a carta atual no looping não é selecionada
+            // anima a carta abrindo
+            if(!cartaButton.isSelecionada){
+                [UIView transitionWithView:cartaButton
+                              duration:1.0
+                               options:UIViewAnimationOptionTransitionFlipFromLeft
+                            animations:nil
+                            completion:^(BOOL finished) {
+                                
+                            }];
+                
+            }
+            
+            // ... anima o alpha 0.5
+            [UIView transitionWithView:cartaButton
+                              duration:0.5
+                               options:UIViewAnimationOptionCurveLinear
+                            animations:^{
+                                [cartaButton setAlpha:0.5];
+                            }
+                            completion:nil];
+        }
+        
         cartaButton.selecionada = carta.isEscolhida;
         cartaButton.ativa = carta.isCombinada;
         
-        [cartaButton setAlpha:carta.isCombinada?0.5:1];
-        
-        
-        /*
-        [cartaButton setTitle:[self tituloParaACarta:carta] forState:UIControlStateNormal];
-        [cartaButton setBackgroundImage:[self imagemParaACarta:carta] forState:UIControlStateNormal];
-                
-        cartaButton.enabled = !carta.isCombinada;*/
         
     }
     
