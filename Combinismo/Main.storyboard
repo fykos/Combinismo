@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -24,14 +25,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Boa Sorte!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q7-3L-RCR">
-                                <rect key="frame" x="6" y="429" width="308" height="21"/>
+                                <rect key="frame" x="6" y="467" width="308" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGV-OL-2lV" customClass="CartaView">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ZGV-OL-2lV" customClass="CartaView">
                                 <rect key="frame" x="6" y="28" width="71" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZGV-OL-2lV" secondAttribute="height" multiplier="71:100" id="ykW-oH-ASx"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="imagemVerso" value="cartaVerso"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="raioCantos">
@@ -44,9 +48,12 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zqd-rw-F1u"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4g-lg-hR1" customClass="CartaView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4g-lg-hR1" customClass="CartaView">
                                 <rect key="frame" x="85" y="28" width="71" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="i4g-lg-hR1" secondAttribute="height" multiplier="71:100" id="Lh1-fO-yEx"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
@@ -59,9 +66,12 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4b3-so-XlZ"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzF-Hl-Sro" customClass="CartaView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzF-Hl-Sro" customClass="CartaView">
                                 <rect key="frame" x="164" y="28" width="71" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pzF-Hl-Sro" secondAttribute="height" multiplier="71:100" id="ohp-kg-qWP"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
@@ -74,9 +84,12 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SYa-o1-aCo"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tzo-0S-O47" customClass="CartaView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzo-0S-O47" customClass="CartaView">
                                 <rect key="frame" x="243" y="28" width="71" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tzo-0S-O47" secondAttribute="height" multiplier="71:100" id="EWs-pg-zmM"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
@@ -89,9 +102,12 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bN7-xO-Vin"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Rh-JA-Qej" customClass="CartaView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Rh-JA-Qej" customClass="CartaView">
                                 <rect key="frame" x="6" y="136" width="71" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1Rh-JA-Qej" secondAttribute="height" multiplier="71:100" id="emC-ou-THT"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
@@ -104,9 +120,12 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="shL-wl-sBW"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8sJ-a4-AFq" customClass="CartaView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sJ-a4-AFq" customClass="CartaView">
                                 <rect key="frame" x="85" y="136" width="71" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8sJ-a4-AFq" secondAttribute="height" multiplier="71:100" id="YxN-sm-FqR"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
@@ -119,9 +138,12 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZQs-xm-0DA"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WLi-KF-nRl" customClass="CartaView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLi-KF-nRl" customClass="CartaView">
                                 <rect key="frame" x="164" y="136" width="71" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WLi-KF-nRl" secondAttribute="height" multiplier="71:100" id="BTo-Sc-szw"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
@@ -134,9 +156,12 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CDm-Ei-AJg"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kT2-hS-gvS" customClass="CartaView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kT2-hS-gvS" customClass="CartaView">
                                 <rect key="frame" x="243" y="136" width="71" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kT2-hS-gvS" secondAttribute="height" multiplier="71:100" id="xR9-tH-DLA"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
@@ -149,9 +174,12 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yJf-8G-Iwj"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sP2-FT-i8m" customClass="CartaView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sP2-FT-i8m" customClass="CartaView">
                                 <rect key="frame" x="6" y="244" width="71" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sP2-FT-i8m" secondAttribute="height" multiplier="71:100" id="Eqm-eH-Wcd"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
@@ -164,9 +192,12 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FAh-ri-WQ4"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jxq-7B-57e" customClass="CartaView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jxq-7B-57e" customClass="CartaView">
                                 <rect key="frame" x="85" y="244" width="71" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jxq-7B-57e" secondAttribute="height" multiplier="71:100" id="leZ-Df-Etj"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
@@ -179,9 +210,12 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3oT-77-KqZ"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2F-lU-WXX" customClass="CartaView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2F-lU-WXX" customClass="CartaView">
                                 <rect key="frame" x="164" y="244" width="71" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a2F-lU-WXX" secondAttribute="height" multiplier="71:100" id="n6f-Ju-spM"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
@@ -194,9 +228,12 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0ws-YW-qLa"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U9z-VT-o2C" customClass="CartaView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9z-VT-o2C" customClass="CartaView">
                                 <rect key="frame" x="243" y="244" width="71" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="U9z-VT-o2C" secondAttribute="height" multiplier="71:100" id="2ta-P4-dBq"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="selecionada" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="ativa" value="NO"/>
@@ -209,8 +246,14 @@
                                     <action selector="clicaCarta:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ipn-7p-OUt"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="vUo-ql-ZGw">
-                                <rect key="frame" x="218" y="523" width="96" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pontuação: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="gwV-ZZ-k1u">
+                                <rect key="frame" x="16" y="527" width="176" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="vUo-ql-ZGw">
+                                <rect key="frame" x="215" y="523" width="99" height="30"/>
                                 <state key="normal" title="Novo Jogo">
                                     <color key="titleColor" red="0.9932675017" green="1" blue="0.96877393580000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -219,19 +262,51 @@
                                     <action selector="clicaNovo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BZ9-S6-uHx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pontuação: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gwV-ZZ-k1u">
-                                <rect key="frame" x="16" y="527" width="90" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.12504428266867149" green="0.63079568614130432" blue="0.23975210895194185" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Teg-OG-i5s" firstAttribute="top" secondItem="gwV-ZZ-k1u" secondAttribute="bottom" constant="20" id="B2u-HQ-Rij"/>
-                            <constraint firstAttribute="centerX" secondItem="6q7-3L-RCR" secondAttribute="centerX" id="KoH-dl-DTb"/>
-                            <constraint firstItem="gwV-ZZ-k1u" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ODS-ad-6pa"/>
-                            <constraint firstAttribute="centerY" secondItem="6q7-3L-RCR" secondAttribute="centerY" constant="-155.5" id="gVM-xU-iWu"/>
+                            <constraint firstItem="8sJ-a4-AFq" firstAttribute="top" secondItem="i4g-lg-hR1" secondAttribute="bottom" constant="8" id="0PE-R9-lPN"/>
+                            <constraint firstItem="kT2-hS-gvS" firstAttribute="top" secondItem="tzo-0S-O47" secondAttribute="bottom" constant="8" id="1Ly-5T-JnU"/>
+                            <constraint firstItem="WLi-KF-nRl" firstAttribute="top" secondItem="pzF-Hl-Sro" secondAttribute="bottom" constant="8" id="1Q2-Mf-aU6"/>
+                            <constraint firstItem="U9z-VT-o2C" firstAttribute="top" secondItem="kT2-hS-gvS" secondAttribute="bottom" constant="8" id="1Ve-Zp-kLE"/>
+                            <constraint firstItem="pzF-Hl-Sro" firstAttribute="leading" secondItem="i4g-lg-hR1" secondAttribute="trailing" constant="8" id="2Nl-NT-7My"/>
+                            <constraint firstItem="kT2-hS-gvS" firstAttribute="leading" secondItem="WLi-KF-nRl" secondAttribute="trailing" constant="8" id="3bO-h4-WEL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vUo-ql-ZGw" secondAttribute="trailing" constant="-10" id="4PG-DP-iHO"/>
+                            <constraint firstItem="Jxq-7B-57e" firstAttribute="centerY" secondItem="sP2-FT-i8m" secondAttribute="centerY" id="5JY-3r-rzR"/>
+                            <constraint firstItem="sP2-FT-i8m" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-10" id="8BL-ey-DmB"/>
+                            <constraint firstItem="8sJ-a4-AFq" firstAttribute="leading" secondItem="1Rh-JA-Qej" secondAttribute="trailing" constant="8" id="CCS-e1-0Ux"/>
+                            <constraint firstItem="WLi-KF-nRl" firstAttribute="leading" secondItem="8sJ-a4-AFq" secondAttribute="trailing" constant="8" id="CiD-me-QT2"/>
+                            <constraint firstItem="WLi-KF-nRl" firstAttribute="centerY" secondItem="8sJ-a4-AFq" secondAttribute="centerY" id="D1x-0q-r7E"/>
+                            <constraint firstItem="pzF-Hl-Sro" firstAttribute="centerY" secondItem="i4g-lg-hR1" secondAttribute="centerY" id="FUk-b6-D8j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U9z-VT-o2C" secondAttribute="trailing" constant="-10" id="FtN-iX-SJ1"/>
+                            <constraint firstItem="i4g-lg-hR1" firstAttribute="top" secondItem="lB7-p6-sG4" secondAttribute="bottom" constant="8" id="FvR-Dr-7ac"/>
+                            <constraint firstItem="Jxq-7B-57e" firstAttribute="leading" secondItem="sP2-FT-i8m" secondAttribute="trailing" constant="8" id="LSs-GX-M3b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tzo-0S-O47" secondAttribute="trailing" constant="-10" id="MBf-N8-58F"/>
+                            <constraint firstItem="U9z-VT-o2C" firstAttribute="leading" secondItem="a2F-lU-WXX" secondAttribute="trailing" constant="8" id="NIs-y2-lP8"/>
+                            <constraint firstItem="i4g-lg-hR1" firstAttribute="leading" secondItem="ZGV-OL-2lV" secondAttribute="trailing" constant="8" id="U6B-AD-24C"/>
+                            <constraint firstItem="ZGV-OL-2lV" firstAttribute="top" secondItem="lB7-p6-sG4" secondAttribute="bottom" constant="8" id="V0J-nL-82c"/>
+                            <constraint firstItem="kT2-hS-gvS" firstAttribute="centerY" secondItem="WLi-KF-nRl" secondAttribute="centerY" id="Vw1-VF-nho"/>
+                            <constraint firstItem="sP2-FT-i8m" firstAttribute="top" secondItem="1Rh-JA-Qej" secondAttribute="bottom" constant="8" id="Wdm-Vw-MAI"/>
+                            <constraint firstItem="1Rh-JA-Qej" firstAttribute="centerY" secondItem="8sJ-a4-AFq" secondAttribute="centerY" id="blI-2z-Waw"/>
+                            <constraint firstItem="Teg-OG-i5s" firstAttribute="top" secondItem="6q7-3L-RCR" secondAttribute="bottom" constant="80" id="c1u-Tp-EHN"/>
+                            <constraint firstItem="a2F-lU-WXX" firstAttribute="leading" secondItem="Jxq-7B-57e" secondAttribute="trailing" constant="8" id="e1e-kq-QYd"/>
+                            <constraint firstItem="tzo-0S-O47" firstAttribute="leading" secondItem="pzF-Hl-Sro" secondAttribute="trailing" constant="8" id="g17-vW-duy"/>
+                            <constraint firstItem="1Rh-JA-Qej" firstAttribute="top" secondItem="ZGV-OL-2lV" secondAttribute="bottom" constant="8" id="grZ-XR-zPy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kT2-hS-gvS" secondAttribute="trailing" constant="-10" id="gxZ-6g-ulK"/>
+                            <constraint firstItem="pzF-Hl-Sro" firstAttribute="top" secondItem="lB7-p6-sG4" secondAttribute="bottom" constant="8" id="hwx-a5-68q"/>
+                            <constraint firstItem="1Rh-JA-Qej" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-10" id="i6V-UI-0Xu"/>
+                            <constraint firstItem="ZGV-OL-2lV" firstAttribute="centerY" secondItem="i4g-lg-hR1" secondAttribute="centerY" id="id2-1d-otn"/>
+                            <constraint firstItem="ZGV-OL-2lV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-10" id="jhu-Nw-grg"/>
+                            <constraint firstItem="Teg-OG-i5s" firstAttribute="top" secondItem="gwV-ZZ-k1u" secondAttribute="bottom" constant="20" id="kdf-h1-vRV"/>
+                            <constraint firstItem="pzF-Hl-Sro" firstAttribute="centerY" secondItem="tzo-0S-O47" secondAttribute="centerY" id="lGd-md-cB5"/>
+                            <constraint firstItem="gwV-ZZ-k1u" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nyc-oG-3sy"/>
+                            <constraint firstAttribute="centerX" secondItem="6q7-3L-RCR" secondAttribute="centerX" id="sEo-H8-1Ar"/>
+                            <constraint firstItem="tzo-0S-O47" firstAttribute="top" secondItem="lB7-p6-sG4" secondAttribute="bottom" constant="8" id="sJc-2f-a78"/>
+                            <constraint firstItem="a2F-lU-WXX" firstAttribute="centerY" secondItem="U9z-VT-o2C" secondAttribute="centerY" id="vh1-da-7jK"/>
+                            <constraint firstItem="Jxq-7B-57e" firstAttribute="top" secondItem="8sJ-a4-AFq" secondAttribute="bottom" constant="8" id="wcG-JV-xUk"/>
+                            <constraint firstItem="a2F-lU-WXX" firstAttribute="top" secondItem="WLi-KF-nRl" secondAttribute="bottom" constant="8" id="xHe-YF-kPt"/>
+                            <constraint firstItem="Teg-OG-i5s" firstAttribute="top" secondItem="vUo-ql-ZGw" secondAttribute="bottom" constant="15" id="yAL-xc-9lE"/>
+                            <constraint firstItem="a2F-lU-WXX" firstAttribute="centerY" secondItem="Jxq-7B-57e" secondAttribute="centerY" id="yUl-m8-HD0"/>
                         </constraints>
                     </view>
                     <connections>

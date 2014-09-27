@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString *const nomeDoCanal;
+extern NSString *const JogoDeCartasViewControlerNotificaACominacaoNotification;
 
 @interface JogoDeCartasViewControler : UIViewController
 

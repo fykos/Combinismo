@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "Baralho.h"
 
+extern NSString *const JogoDeCartasViewControlerNotificaACominacaoNotification;
+
 @interface JogoDeCombinacaoDeCartas : NSObject
 
 // inicializador! (Designated initializer)

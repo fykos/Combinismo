@@ -122,9 +122,9 @@ static const int CUSTO_PARA_ESCOLHER = 1;
                     NSString *pontos = [NSString stringWithFormat:@"%i",pontuacaoDaCombinacao];
                     
                     // posta uma nova notificacao
-                    NSString *const nomeDoCanal = @"canalNotificationElis";
+                    NSString * const JogoDeCartasViewControlerNotificaACominacaoNotification = @"br.com.elisnunes.Combinismo.JogoDeCartasViewControlerNotificaACominacaoNotification";
                     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-                    [nc postNotificationName:nomeDoCanal
+                    [nc postNotificationName:JogoDeCartasViewControlerNotificaACominacaoNotification
                                       object:self
                                     userInfo: @{
                                                 @"cartaA":carta,

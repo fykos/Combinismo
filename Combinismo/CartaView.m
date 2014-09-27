@@ -128,13 +128,16 @@
         }
     }else{
         //// Carta Drawing Verso (com a imagem)
+        
         UIImage* verso = self.imagemVerso;
         UIBezierPath* cartaPath = [UIBezierPath bezierPathWithRoundedRect: CGRectMake(CGRectGetMinX(frameGlobal), CGRectGetMinY(frameGlobal), CGRectGetWidth(frameGlobal), CGRectGetHeight(frameGlobal)) cornerRadius: self.raioCantos];
         CGContextSaveGState(context);
         CGContextSetPatternPhase(context, CGSizeMake(0, 0));
-        [[UIColor colorWithPatternImage: verso] setFill];
+        [[UIColor colorWithPatternImage: verso]  setFill];
         [cartaPath fill];
         CGContextRestoreGState(context);
+        
+        
     }
     
     
