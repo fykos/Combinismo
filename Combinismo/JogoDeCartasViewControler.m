@@ -54,31 +54,68 @@
 }
 - (IBAction)clicaNovo:(UIButton *)novoJogo {
     
+    // faz o looping para desvirar somente as cartas que estão viradas
     for (CartaView *cartaButton in self.cartasButton) {
         
-        [UIView transitionWithView:cartaButton
-                          duration:0.5
-                           options:UIViewAnimationOptionCurveLinear
-                        animations:^{
-                            [cartaButton setAlpha:1];
-                        }
-                        completion:nil];
-        
+        // desvira somente as que estão viradas
         if(cartaButton.isSelecionada){
-        [UIView transitionWithView:cartaButton
-                          duration:1.0
-                           options:UIViewAnimationOptionTransitionFlipFromRight
-                        animations:nil
-                        completion:nil];
+            
+            
+            // desvira a carta
+            [UIView transitionWithView:cartaButton
+                              duration:1.0
+                               options:UIViewAnimationOptionTransitionFlipFromRight
+                            animations:nil
+                            completion:^(BOOL finished) {
+                                [cartaButton setAlpha:0];
+                                [UIView transitionWithView:cartaButton
+                                                  duration:1.0
+                                                   options:UIViewAnimationOptionTransitionCurlUp
+                                                animations:nil
+                                                completion:^(BOOL finished) {
+                                                    
+                                                    
+                                                    CGFloat posicaoX = cartaButton.frame.origin.x;
+                                                    CGFloat posicaoY = cartaButton.frame.origin.y;
+                                                    
+                                                    cartaButton.center = CGPointMake(0, 0);
+                                                    [cartaButton setAlpha:1];
+                                                    [UIView transitionWithView:cartaButton
+                                                                      duration:1.0
+                                                                       options:UIViewAnimationOptionTransitionCurlDown
+                                                                    animations:^{
+                                                                        cartaButton.center = CGPointMake(posicaoX, posicaoY);
+                                                                    }
+                                                                    completion:nil];
+                                                }];
+                            }];
+            
+            
+            
+            // volta a transparencia para 1
+            [UIView transitionWithView:cartaButton
+                              duration:0.5
+                               options:UIViewAnimationOptionCurveLinear
+                            animations:^{
+                                [cartaButton setAlpha:1.0];
+                            }
+                            completion:nil];
+
         }
         
         cartaButton.selecionada = NO;
         cartaButton.ativa = NO;
     }
     
+    //zera o jogo, ao fazer o primeiro getter é iniciado um novo jogo baralho
     _jogo=nil;
     
+    //reinicia o canal nsnotification
+    [self iniciaCanal];
+    
+    //zera as labels
     self.avisoLabel.text=@"Novo jogo iniciado!";
+    self.pontuacaoLabel.text=@"Pontuação: 0";
     
 }
 
@@ -164,15 +201,19 @@
 {
     [super viewWillAppear:animated];
     
-    // cria a estacao de radio do nsnotification
+    [self iniciaCanal];
+    
+}
+
+- (void)iniciaCanal
+{
+    // cria a estacao de radio do nsnotification, como era mesmo aquele nomão?
     NSString *const nomeDoCanal = @"canalNotificationElis";
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     [nc addObserver:self
            selector:@selector(notificacaoRecebida:)
                name:nomeDoCanal
-             object:self.jogo
-     ];
-    
+             object:self.jogo];
 }
 
 

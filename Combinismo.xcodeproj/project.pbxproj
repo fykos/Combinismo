@@ -78,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08A56A1C19D66A54001353A0 /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				15E207A019C8E09800D76747 /* JogoDeCartasViewControler.h */,
+				15E207A119C8E09800D76747 /* JogoDeCartasViewControler.m */,
+			);
+			name = Controlers;
+			sourceTree = "<group>";
+		};
 		15CB9AB119CCBA960045463F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,9 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				15E2079F19C8E09800D76747 /* Main.storyboard */,
-				15E207A019C8E09800D76747 /* JogoDeCartasViewControler.h */,
-				15E207A119C8E09800D76747 /* JogoDeCartasViewControler.m */,
-				15ED783119D5B96800F45EDC /* ViewsPersonalizadas */,
+				08A56A1C19D66A54001353A0 /* Controlers */,
+				15ED783119D5B96800F45EDC /* Views */,
 				15CB9AB119CCBA960045463F /* Model */,
 				15E2077919C8E07500D76747 /* Supporting Files */,
 			);
@@ -156,13 +164,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		15ED783119D5B96800F45EDC /* ViewsPersonalizadas */ = {
+		15ED783119D5B96800F45EDC /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				15228D7519D347A100A51804 /* CartaView.h */,
 				15228D7619D347A100A51804 /* CartaView.m */,
 			);
-			name = ViewsPersonalizadas;
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
